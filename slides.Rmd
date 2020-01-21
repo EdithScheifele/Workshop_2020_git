@@ -9,17 +9,23 @@ output: beamer_presentation
 knitr::opts_chunk$set(echo = FALSE, comment = NA)
 ```
 
-## Introduction
-
+```{r}
+library(here)
+```
 
 ## Aim for today
 
 \begin{itemize}
 \item Get to know git
 \item Download and configure git
-\item Use basic git functions: git init, git add, git commit, git status, git log
+\item Use basic functions: git init, git add, git commit, git status, git log
 \item Create an Github account
+\item Clone the repository with the slides for today
 \end{itemize}
+
+## Introduction
+
+- created 2005 by Linus Torvalds (the creator of Linux) for the development of the Linux Kernel
 
 
 ## Reasons to use git
@@ -34,5 +40,34 @@ https://stackoverflow.com/questions/1408450/why-should-i-use-version-control
 https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst
 
 
+## Download and Configuration
+
+- download git from: https://git-scm.com/downloads
+- install it
+
+## Basic functions
+
+- we will use the bash shell that comes with git
+
+```{r graphic_bash_shell, out.width="74%", echo=FALSE}
+knitr::include_graphics(here("bash_shell.JPG"))
+```
+
+## Repositories
+
+- Create a folder on your desktop called *test_git_folder*  
+- Right click on it > Git Bash Here 
+- Initialize a repository by typing *git init* into shell
+
+```{r git_init, out.width="74%", echo=FALSE}
+knitr::include_graphics(here("git_init.JPG"))
+```
+
+
 ## Resources
+
+https://git-scm.com/
+
+https://git-scm.com/book/en/v2
+
 
