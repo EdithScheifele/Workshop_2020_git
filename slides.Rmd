@@ -1,0 +1,38 @@
+---
+title: "Worshop on Version Control with git"
+author: "Edith Scheifele (B7, Z2)"
+date: "24 01 2020"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment = NA)
+```
+
+## Introduction
+
+
+## Aim for today
+
+\begin{itemize}
+\item Get to know git
+\item Download and configure git
+\item Use basic git functions: git init, git add, git commit, git status, git log
+\item Create an Github account
+\end{itemize}
+
+
+## Reasons to use git
+
+- better collaboration
+- better tracking
+
+
+\small
+https://stackoverflow.com/questions/1408450/why-should-i-use-version-control
+
+https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst
+
+
+## Resources
+

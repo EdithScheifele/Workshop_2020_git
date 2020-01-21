@@ -1,0 +1,20 @@
+Announcement workshop on "version control with git", 24th, Jan, 16-17:30, SFB-Besprechungsraum
+
+Version control systems help keep track of the changes you made to your code, or even text, and facilitates working jointly on a project (e.g., a data analysis for an article).
+Knowing at least a little will help you tremendously organize your work and collaborate with others.
+
+I will give an introductory workshop on git, probably the most widely used version control system in the world, and its basic functionality. 
+
+Date : Friday, 24th Jan
+Time: 16:00 - 17.30
+Location: SFB-Besprechungsraum
+
+Please write me an email if you consider taking part, so I can provide you with more information about how to install git and other software we will use.
+
+Best, 
+Edith
+
+
+
+
+
