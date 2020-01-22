@@ -55,7 +55,7 @@ knitr::include_graphics(here("bash_shell.JPG"))
 
 ## Repositories
 
-- Create a folder on your desktop called *test_git_folder*  
+- Create a folder on your desktop called *test_git_folder*  - this is your **repository (repo)** 
 - Right click on it > Git Bash Here 
 - Initialize a repository by typing *git init* into shell
 
@@ -63,6 +63,18 @@ knitr::include_graphics(here("bash_shell.JPG"))
 knitr::include_graphics(here("git_init.JPG"))
 ```
 
+## Basic functions
+
+- every git function you type into the shell is prepended with *git* 
+
+- the core functions are: 
+ + git init
+ + git add
+ + git commit -m "some infos"
+  
+- also very usful:
+ + git status
+ + git log
 
 ## Resources
 
