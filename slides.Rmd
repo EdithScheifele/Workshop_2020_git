@@ -24,7 +24,7 @@ library(here)
 - download and configure git
 - use basic functions: git init, git add, git commit, git status, git log
 - create an Github account
-  + fork and clone the repository with the slides for today
+  + clone the repository with the slides for today
 
 ## Introduction
 
@@ -142,21 +142,21 @@ knitr::include_graphics(here("git_init.JPG"))
 - free and open source
 - facilitates collaborating with others
 
-## Github: Create an Account, Fork and Clone
-
+## Github: Create an Account & Clone a repo
+ 
 - create an account at Github
 - navigate to: https://github.com/EdithScheifele/Workshop_2020_git
-- fork it
-- then go to your Github page and clone the repo by copying the https link
-- go to the desktop, open a bash shell
-- type: git clone [https link]
+- clone the repo 
+  + copy the https link 
+  + go to the desktop and open a bash shell
+  + type *git clone [https link]*
 
 ## Wrap-up
 
 - basic git commands: init, add, commit, status, log
 - we are able to add and commit a change we made to a file
 - we are able to review the change in the staged and commited stage  
-- we have a Github account and we are able to start collaborating by forking and cloning a repo
+- we have a Github account and we are able to get our own copy of a repo
 
 ## Next steps
 
