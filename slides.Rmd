@@ -1,43 +1,38 @@
 ---
-title: "Worshop on Version Control with git"
+title: "Workshop on Version Control with Git"
 author: "Edith Scheifele (B7, Z2)"
-date: "24 01 2020"
-output: beamer_presentation
+date: "24-01-2020"
+output: 
+  beamer_presentation:
+    template: my_template.tex
+    includes:
+      in_header: page_numbers.tex
+urlcolor: blue
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, comment = NA)
+knitr::opts_chunk$set(echo = FALSE, comment = NA, message = FALSE)
 ```
 
 ```{r}
 library(here)
 ```
 
-## Aim for today
+## Plan for today
 
-\begin{itemize}
-\item Get to know git
-\item Download and configure git
-\item Use basic functions: git init, git add, git commit, git status, git log
-\item Create an Github account
-\item Clone the repository with the slides for today
-\end{itemize}
+- get to know git
+- download and configure git
+- use basic functions: git init, git add, git commit, git status, git log
+- create an Github account
+  + fork and clone the repository with the slides for today
 
 ## Introduction
 
 - created 2005 by Linus Torvalds (the creator of Linux) for the development of the Linux Kernel
+- system for recording changes and documenting them  
+- facilitates collaboration 
 
-
-## Reasons to use git
-
-- better collaboration
-- better tracking
-
-
-\small
-https://stackoverflow.com/questions/1408450/why-should-i-use-version-control
-
-https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst
+- What are your reasons? 
 
 
 ## Download and Configuration
@@ -45,7 +40,7 @@ https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-d
 - download git from: https://git-scm.com/downloads
 - install it
 
-## Basic functions
+## Git bash
 
 - we will use the bash shell that comes with git
 
@@ -55,9 +50,10 @@ knitr::include_graphics(here("bash_shell.JPG"))
 
 ## Repositories
 
-- Create a folder on your desktop called *test_git_folder*  - this is your **repository (repo)** 
-- Right click on it > Git Bash Here 
-- Initialize a repository by typing *git init* into shell
+- create a folder on your desktop called test_git_folder 
+- this will become your Git **repository (repo)** 
+- right click on it > Git Bash Here 
+- initialize the repository by typing *git init* into the shell  
 
 ```{r git_init, out.width="74%", echo=FALSE}
 knitr::include_graphics(here("git_init.JPG"))
@@ -65,21 +61,115 @@ knitr::include_graphics(here("git_init.JPG"))
 
 ## Basic functions
 
-- every git function you type into the shell is prepended with *git* 
+- every git function is prepended with *git* 
 
 - the core functions are: 
- + git init
- + git add
- + git commit -m "some infos"
+  + git init  
+  + git add  
+  + git commit -m "some infos"  
+  + git 
   
-- also very usful:
- + git status
- + git log
+  
+- also very useful:  
+  + git status  
+  + git log  
+ 
+## git status & git log
+
+- **git status**: shows the status of your project
+
+**Task**: 
+
+- type *git status* into the command line to view the status of your project
+
+- **git log**: shows the commit logs (history of your changes)
+
+**Task**: 
+
+- type *git log* into your command line
+
+## git logic
+
+- three main stages of a file: *untracked* - *tracked* / *staged* - *commited*
+
+- if you start your project with *git init*, git becomes active (it creates a hidden directory *.git*)  
+
+- if you place a file into your folder, git becomes aware of it as *untracked*
+
+**Task**:  
+
+- create a txt file (e.g., myfile.txt) with only one line of text and save it into your folder
+
+- now type *git status* again. Can you see your file under *Untracked files*?
+
+## git add
+
+- to add the file to the so called staging area, type *git add myfile.txt*  
+
+- git now deposits it into it so called index
+
+**Task**:
+
+- do this for your txt file, then do *git status*
+
+## git commit -m "some infos"
+
+- to actually record your changes, type: *git commit -m "describe the change you made"*
+
+- do this for your txt file, then do *git status* and *git log*
+
+## Task
+
+- write a second line into your txt file
+- re-do the git process above with *git add*, *git commit*, *git status* and *git log*
+
+
+## See your changes: *git show [SHA1 hash]* and *git diff*
+
+- write a third line into your file  
+- do *git add myfile.txt*
+- then type *git diff myfile.txt* to see the change you made
+- then commit the change
+
+- every commit has its own unique SHA1 hash key (the very long string of numbers and letters)
+- by typing *git show [SHA1 hash]* you can see the commited change 
+- be careful: STRG + C / V don't work in the shell, use the menue
+
+## Github
+
+- https://github.com/
+- online platform for your projects
+- free and open source
+- facilitates collaborating with others
+
+## Github: Create an Account, Fork and Clone
+
+- create an account at Github
+- navigate to: https://github.com/EdithScheifele/Workshop_2020_git
+- fork it
+- then go to your Github page and clone the repo by copying the https link
+- go to the desktop, open a bash shell
+- type: git clone [https link]
+
+## Wrap-up
+
+- basic git commands: init, add, commit, status, log
+- we are able to add and commit a change we made to a file
+- we are able to review the change in the staged and commited stage  
+- we have a Github account and we are able to start collaborating by forking and cloning a repo
+
+## Next steps
+
+- use git for your projects (*practice makes perfect*)  
+- read the first chapters of the free book *Pro Git* (link provided below)  
+
 
 ## Resources
 
 https://git-scm.com/
 
 https://git-scm.com/book/en/v2
+
+Loelinger, Jon & McCullough, Matthew (2012): Version control with git.
 
 
